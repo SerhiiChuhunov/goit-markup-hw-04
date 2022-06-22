@@ -155,6 +155,19 @@ img {
     padding: 200px 0;
     text-align: center;
     background-color: var(--herofooter-bg-color);
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+     to right,
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)
+     ), 
+     url(../images/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -169,17 +182,6 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-}
-
-.overlay {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../images/fon.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .button {
