@@ -131,7 +131,18 @@ ul {
     margin-left: auto;
 }
 
+.contacts .icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contacts .icon:hover {
+    fill: #2196F3;
+}
+
 .contacts .link {
+    display: inline-flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -208,6 +219,15 @@ img {
     display: flex;
 }
 
+.thumb {
+    margin-bottom: 30px;
+    background-color: var(--secondary-white-color);
+    border-radius: 4px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
 .peculiarities .item {
     width: 270px;
 }
@@ -246,7 +266,8 @@ img {
 }
 
 .section-title,
-.team-title {
+.team-title,
+.clients-title {
     margin-top: 0;
     margin-bottom: 50px;
     font-size: 36px;
@@ -281,6 +302,27 @@ img {
     text-align: center;
 }
 
+.card-icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-icon .link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.link .icon {
+    fill: #afb1b8;
+}
+
+.link .icon:hover {
+    fill: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
 .work-list .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -292,15 +334,43 @@ img {
 
 .team-text {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
+}
+
+.company {
+    display: flex;
+}
+
+.thumb-clients {
+    outline: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb-clients:hover {
+    border: 1px solid #2196F3;
+    color: #2196F3;
+}
+
+.company .item+.item {
+    margin-left: 30px;
 }
 
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--herofooter-bg-color);
+}
+
+.address {
+    display: flex;
+    align-items: baseline;
+
 }
 
 .address-nav .item+.item {
@@ -319,6 +389,33 @@ img {
     font-size: 14px;
     line-height: 1.71;
     color: var(--address-link-color);
+}
+
+.footer-container .title {
+    margin-top: 0;
+    margin-left: 156px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.social {
+    display: flex;
+    margin-left: 156px;
+    gap: 10px;
+}
+
+.social .link {
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Стили портфолио */
@@ -353,6 +450,7 @@ img {
 .button-potrf:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .content .title {
@@ -388,6 +486,11 @@ img {
 
 .card-context {
     padding: 20px;
+}
+
+.card-portf:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
