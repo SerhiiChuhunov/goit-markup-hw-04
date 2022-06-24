@@ -131,9 +131,12 @@ ul {
     margin-left: auto;
 }
 
+.contacts .item {
+    fill: currentColor;
+}
+
 .contacts .icon {
     margin-right: 10px;
-    fill: currentColor;
 }
 
 .contacts .icon:hover {
@@ -220,6 +223,7 @@ img {
 }
 
 .thumb {
+    display: flex;
     margin-bottom: 30px;
     background-color: var(--secondary-white-color);
     border-radius: 4px;
@@ -344,6 +348,7 @@ img {
 }
 
 .thumb-clients {
+    display: flex;
     outline: 1px solid #afb1b8;
     border-radius: 4px;
     width: 170px;
