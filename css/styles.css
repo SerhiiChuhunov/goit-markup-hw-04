@@ -8,7 +8,8 @@
     --address-link-color: rgba(255, 255, 255, 0.6);
     --logo-color: #000000;
     --herofooter-bg-color: #2F303A;
-
+    --icons-primary-color: #afb1b8;
+    --footer-social-color: rgba(255, 255, 255, 10%);
     }
 
 body {
@@ -320,13 +321,17 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    margin-right: 10px;
-    fill: #afb1b8;
+    /* margin-right: 10px; */
+    fill: var(--icons-primary-color);
 }
 
-.card-icon .link:last-child {
-    margin-right: 0;
+.card-icon .item-team + .item-team {
+    margin-left: 10px;
 }
+
+/* .card-icon .item-team:not(:last-child) {
+    margin-right: 10px;
+} */
 
 .card-icon .link:hover {
     fill: var(--primary-white-color);
@@ -356,21 +361,23 @@ img {
 
 .company .link {
     display: inline-flex;
-    outline: 1px solid #afb1b8;
+    outline: 1px solid var(--icons-primary-color);
     border-radius: 4px;
     width: 170px;
     height: 92px;
     align-items: center;
     justify-content: center;
-    fill: #afb1b8;
+    fill: var(--icons-primary-color);
 }
 
-.company .link:hover {
-    border: 1px solid #2196F3;
+.company .link:hover,
+.company .link:focus {
+    border: 1px solid var(--accent-color);
 }
 
-.icon-clients:hover {
-    fill: #2196F3;
+.company .link:hover .icon-clients,
+.company .link:focus .icon-clients {
+    fill: var(--accent-color);
 }
 
 .company .item+.item {
@@ -431,13 +438,13 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    margin-right: 10px;
-    fill: #FFFFFF;
-    background-color: rgba(255, 255, 255, 10%);
+    /* margin-right: 10px; */
+    fill: var(--primary-white-color);
+    background-color: var(--footer-social-color);
 }
 
-.social .link:last-child {
-    margin-right: 0;
+.social .item-social + .item-social {
+    margin-left: 10px;
 }
 
 .social .link:hover {
@@ -502,7 +509,7 @@ img {
     margin-top: -30px;
 }
 
-.content .item {
+.content .item-portf {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
@@ -514,7 +521,7 @@ img {
     padding: 20px;
 }
 
-.card-portf:hover {
+.item-portf:hover {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
